@@ -1,0 +1,30 @@
+.slide {
+	padding: $gutter;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&-image {
+		img {
+			@include from(tablet) {
+				max-width: 500px;
+			}
+		}
+	}
+
+	&-logo {
+		width: 80%;
+		display: block;
+	}
+
+	&-title {
+		color: color(azul-oscuro);
+		margin: $gutter / 2;
+		text-align: center;
+	}
+
+	&-content {
+		text-align: justify;
+	}
+}

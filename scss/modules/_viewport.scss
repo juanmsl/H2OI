@@ -1,0 +1,18 @@
+#vpsize {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	padding: 0 1em;
+	line-height: 2;
+	cursor: cursor;
+	cursor: none;
+	-webkit-user-select: none;
+	transition: all 0.3s;
+	color: black;
+	background: rgba(#686868, 0.2);
+
+	&:hover {
+		color: white;
+		background: #686868;
+	}
+}

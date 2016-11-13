@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size : $font-size;
+	font-family : $main-font;
+	line-height : 1.5;
+	color: color(negro);
+}
+
+h1 {
+	font-size : $h1;
+}
+
+h2 {
+	font-size : $h2;
+}
+
+h3 {
+	font-size : $h3;
+}
+
+h4 {
+	font-size:  $h4;
+}
+
+h5 {
+	font-size:  $h5;
+}
+
+h6 {
+	font-size:  $h6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight : $light;
+}
+
+img {
+	max-width : 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}

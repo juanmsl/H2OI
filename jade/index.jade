@@ -1,0 +1,48 @@
+extends templates/base
+
+append config
+	-title= "H2O Inteligence"
+
+block header
+	header.main-header
+		section.main-header-content
+			h1.main-header-title Innovamos por una ciudad mejor
+		include components/navbar
+
+block main
+	section#section-objetivos.section
+		h3.title Nuestros objetivos
+		h5.subtitle Objetivo general
+		p Reducir los niveles de contaminación en la red de acueducto de la ciudad de Bogotá.
+		h5.subtitle Objetivo especifico
+		p Concientisar a la comunidad del cuidado del agua potable como recurso vital, haciendole ver 	que sus actos repercuten con los demas y consigo mismo, De esta manera fomentar el concepto de un ciudadano Inteligente.
+	section#section-idea.section
+		h3.title Nuestra propuesta
+		p Se propone la implementación de un sistema de sensores los cuales controlarán las afluentes de las redes matrices o primarias, para proporcionar agua potable de mejor calidad.
+		section.video
+			video(controls)
+				source(src="resources/videos/video.mp4" type="video/mp4")
+	section#section-sponsors.section
+		h3.title Nuestros sponsors
+		#owl-example.owl-carousel
+			div.slide
+				img(src="resources/images/mintic.png").slide-logo
+			div.slide
+				img(src="resources/images/javeriana.png").slide-logo
+			div.slide
+				img(src="resources/images/CEA.png").slide-logo
+	section#section-nosotros.section
+		h3.title Nosotros
+		section.about-us
+			article.square
+				h3 Mision
+				p Somos una empresa privada, enfocada al diseño e implementación de soluciones de redes hidricas que aporten e innoven, en los sistemas y estandares que son empleados hoy en dia en la sociedad.
+			article.square
+				h3 Vision
+				p Ser una empresa emprendedora en esta tecnologia y distribuir nuestro servicio a nivel distrital.
+		section.us
+			h3.title ¿ Quienes somos ?
+			section.content
+				img(src="resources/images/nosotros.jpg")
+	.map
+		iframe(src="http://eab-sigue.maps.arcgis.com/apps/webappviewer/index.html?id=6ad170bd1cdc450b823bd22d0786431d")
