@@ -1,0 +1,352 @@
+@import 'https://fonts.googleapis.com/css?family=Dosis|Josefin+Sans';
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.5;
+  color: black;
+}
+
+h1 {
+  font-size: 44.8px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 35.2px;
+}
+
+h4 {
+  font-size: 30.4px;
+}
+
+h5 {
+  font-size: 25.6px;
+}
+
+h6 {
+  font-size: 20.8px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-navbar {
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #00b1f3;
+  color: white;
+  margin-top: auto;
+  z-index: 1000;
+}
+
+@media all and (min-width: 768px) {
+  .main-navbar {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.main-navbar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.main-navbar.fixed .main-navbar-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.main-navbar-header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media all and (min-width: 768px) {
+  .main-navbar-header {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.main-navbar-trigger {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+@media all and (min-width: 768px) {
+  .main-navbar-trigger {
+    display: none;
+  }
+}
+
+.main-navbar-trigger span {
+  width: 80%;
+  height: 5%;
+  background: white;
+  margin: 5% auto;
+}
+
+.main-navbar-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+.main-navbar-title {
+  margin: 0;
+}
+
+.main-navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+@media all and (min-width: 768px) {
+  .main-navbar-menu {
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+.main-navbar-menu-item {
+  line-height: 3em;
+  font-size: 1.3em;
+}
+
+.main-navbar-menu-link {
+  display: block;
+  padding: 0 16px;
+  transition: box-shadow 0.3s;
+  border-bottom: 1px solid;
+}
+
+@media all and (min-width: 768px) {
+  .main-navbar-menu-link {
+    border: none;
+    box-shadow: inset 0 -3px #006bab;
+  }
+  .main-navbar-menu-link:hover {
+    box-shadow: inset 0 -3em #006bab;
+  }
+}
+
+.slide {
+  padding: 16px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media all and (min-width: 768px) {
+  .slide-image img {
+    max-width: 500px;
+  }
+}
+
+.slide-logo {
+  width: 80%;
+  display: block;
+}
+
+.slide-title {
+  color: #03151f;
+  margin: 8px;
+  text-align: center;
+}
+
+.slide-content {
+  text-align: justify;
+}
+
+.main-header {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("../resources/images/cover3.jpg") center center fixed;
+}
+
+.main-header-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-family: "Dosis", sans-serif;
+}
+
+.main-header-title {
+  font-size: 5em;
+  text-align: center;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about-us {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.about-us .square {
+  padding: 16px;
+  width: 300px;
+  text-align: center;
+}
+
+.us .content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.us .content img {
+  width: 100%;
+  padding: 16px;
+}
+
+@media all and (min-width: 768px) {
+  .us .content img {
+    width: 60%;
+  }
+}
+
+.section {
+  width: 100%;
+  padding: 16px;
+  padding-top: 56px;
+  margin: 0 auto;
+}
+
+@media all and (min-width: 768px) {
+  .section {
+    width: 80%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .section {
+    width: 60%;
+  }
+}
+
+@media all and (min-width: 1224px) {
+  .section {
+    width: 50%;
+  }
+}
+
+.section .title, .section .subtitle {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.section .subtitle {
+  text-align: left;
+}
+
+.section .video {
+  width: 80%;
+  margin: auto;
+}
+
+.section .video video {
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
